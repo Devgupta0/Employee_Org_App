@@ -1,0 +1,82 @@
+/* App.css */
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.org-chart {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+label{
+  margin: 5px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.actions label {
+  margin-right: 5px;
+}
+
+.actions input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.actions button {
+  margin: 5px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions label,
+  .actions input {
+    margin-right: 0;
+  }
+
+  .actions button:not(:last-child) {
+    margin-right: 0;
+  }
+}
